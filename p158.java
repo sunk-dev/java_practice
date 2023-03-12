@@ -19,7 +19,7 @@ class printer{
 		//양면복사를 할 경우
 		
 		if(this.duplex==true) {
-			double printpaper=amount/2;
+			double printpaper=amount/2.0; //2.0으로 해야 계산결과가 실수로 산출됨
 			System.out.println(printpaper);
 			printpaper=Math.ceil(printpaper); //올림함수가 작동하지 않음
 			System.out.println(printpaper);
